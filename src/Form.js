@@ -3,16 +3,14 @@ import './form.css';
 
 function Form(){
 const [name,setName]=useState("")
-// const [newname,newsetName]=useState("")
+
 
 const [sname,ssetName]=useState("")
-// const [snewname,snewsetName]=useState("")
+
 
 const [email,setEmail]=useState("")
-// const [newemail,newsetEmail]=useState("")
 
 const [phone,setPhone]=useState("")
-// const [newphone,newsetPhone]=useState("")
 
 const[gender,setGender]=useState("")
 
@@ -41,11 +39,7 @@ const[gender,setGender]=useState("")
     }
 
     function listItem(e){
-        // e.preventDefault();
-        // newsetName(name);
-        // snewsetName(sname);
-        // newsetEmail(email);
-        // newsetPhone(phone);
+        e.preventDefault();
         console.log(name,sname,phone,email,gender)
         
     }
@@ -92,12 +86,9 @@ const[gender,setGender]=useState("")
   </select>
 
      
-    <button type="submit" >Add Task</button>
+    <button type="submit" >Submit</button>
     </form>
-    {/* <li>{newname}</li>
-     <li>{snewname}</li>
-     <li>{newemail}</li>
-     <li>{newphone}</li> */}
+    
     </>
 
     );
